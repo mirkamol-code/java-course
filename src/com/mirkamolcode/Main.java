@@ -2,8 +2,16 @@ package com.mirkamolcode;
 
 public class Main {
 
-     static void main(String[] args) {
-         int amount = 1000_000_000; 
-         System.out.println(amount); // the outp is 1000000000
-     }
+    static void main(String[] args) {
+        int numberOne = 10;
+        int numberTwo = 3;
+
+        System.out.println(numberOne + numberTwo);
+        System.out.println(numberOne - numberTwo);
+        System.out.println(numberOne * numberTwo);
+        System.out.println(numberOne / numberTwo);
+        System.out.println(numberOne % numberTwo);
+
+
+    }
 }

@@ -1,18 +1,26 @@
 package com.mirkamolcode;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
 
     static void main(String[] args) {
-       // Pass by value with Objects
-        Point pointA = new Point(10, 10);
-        Point pointB = pointA;
+        // Arrays
+        int [] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 33;
+        numbers[2] = 6;
+        System.out.println(
+                Arrays.toString(numbers)
+        ); //[1, 33, 6]
+        System.out.println(numbers); // [I@2a84aee7
+        System.out.println(numbers.length); // 3
 
-        pointA.x = 100;
-        pointB.y = 90;
+        int [] numbers2 = {0, 5, 6, 8, 9};
+        System.out.println(numbers2.length); // 5
 
-        System.out.println(pointA);
-        System.out.println(pointB);
+        String [] names = {"Jamila", "Alex"};
+        System.out.println(Arrays.toString(names)); // [Jamila, Alex]
     }
 }

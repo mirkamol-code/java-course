@@ -6,8 +6,10 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("I love cats");
-//        System.out.println("I love cats");
+      int smallNumber = 2;
+      int bigNumber = 4;
+      boolean result = smallNumber > bigNumber;
+      System.out.println(result);
     }
 }
 

@@ -5,11 +5,14 @@ import java.awt.*;
 public class Main {
 
     static void main(String[] args) {
-       // reference Types / Objects
-       int age = 21;
+       // Pass by value with Objects
         Point pointA = new Point(10, 10);
-        System.out.println("pointA = " + pointA);
-        pointA.move(10,11);
-        System.out.println("pointA = " + pointA);
+        Point pointB = pointA;
+
+        pointA.x = 100;
+        pointB.y = 90;
+
+        System.out.println(pointA);
+        System.out.println(pointB);
     }
 }
